@@ -1,0 +1,230 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9fafc;
+  color: #333;
+  padding: 20px;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.dark-mode-toggle label {
+  cursor: pointer;
+  color: #16a085;
+  font-size: 18px;
+}
+
+/* Cart Styles */
+.cart {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.cart-icon {
+  width: 40px;
+  margin-right: 10px;
+}
+
+#cartCount {
+  background-color: #e74c3c;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 18px;
+  animation: bounce 0.3s ease-in-out;
+}
+
+/* Filter Section */
+.filter-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.filter-section:hover {
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.filter-section h2 {
+  color: #2980b9;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.filter-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  color: #2980b9;
+  font-size: 16px;
+}
+
+select, input[type="range"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 10px;
+  border: 1px solid #2980b9;
+  font-size: 16px;
+  background-color: #ecf0f1;
+  color: #34495e;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+select:hover, input[type="range"]:hover {
+  border-color: #1abc9c;
+  background-color: #e5e8e8;
+}
+
+/* Slider Handle Color */
+input[type="range"]::-webkit-slider-thumb {
+  background-color: #2980b9;
+}
+
+input[type="range"]::-moz-range-thumb {
+  background-color: #2980b9;
+}
+
+/* Product Section */
+.product-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.product-section h2 {
+  color: #2980b9;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+/* Product List */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Product Styles */
+.product {
+  padding: 20px;
+  background-color: #ecf0f1;
+  border: 1px solid #2980b9;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  background-color: #2980b9;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.product h3 {
+  color: #34495e;
+  margin-bottom: 10px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.product:hover h3 {
+  color: white;
+}
+
+.product p {
+  color: #7f8c8d;
+  font-size: 16px;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.product:hover img {
+  transform: scale(1.1);
+}
+
+/* Hover Effects */
+.product:hover p {
+  color: #ecf0f1;
+}
+
+/* Bounce animation for cart count */
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}
+
+.bounce {
+  animation: bounce 0.5s;
+}
+
+/* Filter Button */
+.filter-btn {
+  background-color: #16a085;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #1abc9c;
+}
+
+/* Carousel Buttons */
+.carousel-btn {
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background-color: #3498db;
+}

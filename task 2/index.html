@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Online Shopping UI with Filters and Images</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle">
+        <label>
+            <input type="checkbox" id="darkModeSwitch">
+            <span>Dark Mode</span>
+        </label>
+    </div>
+
+    <!-- Cart Notification -->
+    <div class="cart">
+        <img src="shopping-cart-vector-icon-flat-600nw-1690453492.webp "alt="Cart" class="cart-icon">
+        <span id="cartCount">0</span>
+    </div>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <h2>Filter Products</h2>
+        <div class="filter-group">
+            <label for="categoryFilter">Category:</label>
+            <select id="categoryFilter">
+                <option value="all">All</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+                <option value="home-appliances">Home Appliances</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label for="priceFilter">Price Range: $<span id="minPrice">0</span> - $<span id="maxPrice">500</span></label>
+            <input type="range" min="0" max="500" value="500" id="priceFilter">
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="product-section">
+        <h2>Products</h2>
+        <div class="product-list">
+            <!-- Product 1: Smartphone -->
+            <div class="product" data-category="electronics" data-price="300">
+                <img src="Best-smartphone-2.webp" alt="Smartphone">
+                <h3>Smartphone</h3>
+                <p>Price: $300</p>
+            </div>
+            
+            <!-- Product 2: T-Shirt -->
+            <div class="product" data-category="clothing" data-price="80">
+                <img src="header_t-shirts2.avif" alt="T-Shirt">
+                <h3>T-Shirt</h3>
+                <p>Price: $80</p>
+            </div>
+            
+            <!-- Product 3: Vacuum Cleaner -->
+            <div class="product" data-category="home-appliances" data-price="200">
+                <img src="61iCIpzE+jL._AC_SL1500_.jpg" alt="Vacuum Cleaner">
+                <h3>Vacuum Cleaner</h3>
+                <p>Price: $200</p>
+            </div>
+            
+            <!-- Product 4: Laptop -->
+            <div class="product" data-category="electronics" data-price="450">
+                <img src="laptopstopicpage-2048px-3685-2x1-1.webp" alt="Laptop">
+                <h3>Laptop</h3>
+                <p>Price: $450</p>
+            </div>
+            
+            <!-- Product 5: Jeans -->
+            <div class="product" data-category="clothing" data-price="50">
+                <img src="images.jfif" alt="Jeans">
+                <h3>Jeans</h3>
+                <p>Price: $50</p>
+            </div>
+            
+            <!-- Product 6: Blender -->
+            <div class="product" data-category="home-appliances" data-price="100">
+                <img src="51dvMry5NfL._AC_.jpg" alt="Blender">
+                <h3>Blender</h3>
+                <p>Price: $100</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
