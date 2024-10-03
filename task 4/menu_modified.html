@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our delicious menu at Foodie's Delight.">
+    <title>Menu - Foodie's Delight</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Polyfill for older browsers -->
+    <script src="https://cdn.polyfill.io/v3/polyfill.min.js"></script>
+</head>
+<body styles=" display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+margin: 0;
+background-color: #f4f4f4; ">
+    <header>
+        <nav>
+            <h1 style="color:white">Foodie's Delight</h1>
+            <ul>
+                <li><a href="index_modified.html">Home</a></li>
+                <li><a href="menu_modified.html">Menu</a></li>
+                <li><a href="order_modified.html">Order Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="menu-section"style="display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center;
+    gap: 20px; 
+    padding: 20px;
+    max-width: 1200px;">
+            <h2 style="color:white">Foodie's Delight</h2>
+
+            <!-- Menu Categories -->
+            <div class="menu-category">
+                <h3>Burgers</h3>
+                <div class="menu-items" style="
+                    display: -webkit-box;  /* Safari */
+                    display: -ms-flexbox;  /* IE 10 */
+                    display: flex;"    
+                       /* Standard */
+                >
+                    <div class="menu-item" style="text-align: center; /* Center the content of each item */
+                    background-color: white;
+                    padding: 10px;
+                    border-radius: 8px;
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+                    width: 200px;">
+                        <img src="Double-Cheeseburger-wide-FS-and-foodporn-55.webp" loading="lazy" alt="Cheese Burger">
+                        <h4>Cheese Burger</h4>
+                        <p>Rs 799</p>
+                        <button class="add-to-cart" data-item="Cheese Burger" data-price="799">Add to Cart</button>
+                    </div>
+                    <div class="menu-item" style="text-align: center; /* Center the content of each item */
+                    background-color: white;
+                    padding: 10px;
+                    border-radius: 8px;
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+                    width: 200px;">
+                        <img src="double patty.jfif" loading="lazy" alt="Double Patty Burger">
+                        <h4>Double Patty Burger</h4>
+                        <p>Rs 899</p>
+                        <button class="add-to-cart" data-item="Double Patty Burger" data-price="899">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>Pizzas</h3>
+                <div class="menu-items" style="
+                    display: -webkit-box;  /* Safari */
+                    display: -ms-flexbox;  /* IE 10 */
+                    display: flex;         /* Standard */
+                ">
+                    <div class="menu-item" style="text-align: center; /* Center the content of each item */
+                    background-color: white;
+                    padding: 10px;
+                    border-radius: 8px;
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+                    width: 200px;">
+                        <img src="margherita-pizza-resize-3.jpg" loading="lazy" alt="Margherita Pizza">
+                        <h4>Margherita Pizza</h4>
+                        <p>Rs 1200</p>
+                        <button class="add-to-cart" data-item="Margherita Pizza" data-price="1200">Add to Cart</button>
+                    </div>
+                    <div class="menu-item" style="text-align: center; /* Center the content of each item */
+                    background-color: white;
+                    padding: 10px;
+                    border-radius: 8px;
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+                    width: 200px;">
+                        <img src="pepperoni.jfif" loading="lazy" alt="Pepperoni Pizza">
+                        <h4>Pepperoni Pizza</h4>
+                        <p>Rs 1500</p>
+                        <button class="add-to-cart" data-item="Pepperoni Pizza" data-price="1500">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>Pastas</h3>
+                <div class="menu-items" style="
+                    display: -webkit-box;  /* Safari */
+                    display: -ms-flexbox;  /* IE 10 */
+                    display: flex;         /* Standard */
+                ">
+                    <div class="menu-item" style="text-align: center; /* Center the content of each item */
+                    background-color: white;
+                    padding: 10px;
+                    border-radius: 8px;
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+                    width: 200px;">
+                        <img src="spagitti.jfif" loading="lazy" alt="Spaghetti">
+                        <h4>Spaghetti</h4>
+                        <p>Rs 500</p>
+                        <button class="add-to-cart" data-item="Spaghetti" data-price="500">Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="alfredo.jfif" loading="lazy" alt="Fettuccine Alfredo">
+                        <h4>Fettuccine Alfredo</h4>
+                        <p>Rs 899</p>
+                        <button class="add-to-cart" data-item="Fettuccine Alfredo" data-price="899">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Foodie's Delight. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Order delicious meals from our food ordering platform.">
+    <title>Food Ordering Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <h1>Foodie's Delight</h1>
+            <ul>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Welcome to Foodie's Delight</h1>
+        <p>Delicious meals delivered right to your doorstep.</p>
+        <a href="menu.html" class="btn">Explore Our Menu</a>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="service-container">
+            <div class="service-card">
+                <h3>Wide Variety of Cuisines</h3>
+                <p>Explore our diverse menu, featuring dishes from around the world.</p>
+            </div>
+            <div class="service-card">
+                <h3>Fast Delivery</h3>
+                <p>Get your favorite meals delivered fresh and fast to your doorstep.</p>
+            </div>
+            <div class="service-card">
+                <h3>Quality Ingredients</h3>
+                <p>We use only the freshest ingredients to prepare your meals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Preview Section -->
+    <section id="menu-preview">
+        <h2>Popular Dishes</h2>
+        <div class="menu-preview-items">
+            <div class="menu-item">
+                <img src="Double-Cheeseburger-wide-FS-and-foodporn-55.webp" alt="Delicious Cheese Burger">
+                <h4>Cheese Burger</h4>
+                <p>Rs 899</p>
+            </div>
+            <div class="menu-item">
+                <img src="margherita-pizza-resize-3.jpg" alt="Tasty Margherita Pizza">
+                <h4>Margherita Pizza</h4>
+                <p>Rs 1200</p>
+            </div>
+            <div class="menu-item">
+                <img src="spagitti.jfif" alt="Creamy Spaghetti">
+                <h4>Spaghetti</h4>
+                <p>Rs 500</p>
+            </div>
+        </div>
+        <a href="menu.html" class="btn">View Full Menu</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Foodie's Delight. All rights reserved.</p>
+    </footer>
+</body>
+</html>

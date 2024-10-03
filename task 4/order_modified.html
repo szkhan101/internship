@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete your order at Foodie's Delight.">
+    <title>Order Now</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Polyfill for older browsers -->
+    <script src="https://cdn.polyfill.io/v3/polyfill.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 style="color:white">Foodie's Delight</h1>
+            <ul>
+                <li><a href="index_modified.html">Home</a></li>
+                <li><a href="menu_modified.html">Menu</a></li>
+                <li><a href="order_modified.html">Order Now</a></li>
+            </ul>
+        </nav>
+        <h1 style="color:white;text-align: center;">Place Your Order</h1>
+    </header>
+
+    <main>
+        <section1>
+            <h2>Your Cart</h2>
+            <ul id="cart-items">
+                <!-- Cart items will be dynamically added here by JavaScript -->
+            </ul>
+            <p>Total: Rs <span id="total-price">0</span></p>
+        </section1>
+
+        <section1>
+            <h1>Enter Your Details</h1>
+            <form id="order-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="address">Address:</label>
+                <textarea id="address" required></textarea>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" required>
+
+                <button type="submit">Place Order</button>
+            </form>
+        </section1>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Foodie's Delight. All rights reserved.</p>
+    </footer>
+
+    <script src="order.js" defer></script>
+</body>
+</html>
