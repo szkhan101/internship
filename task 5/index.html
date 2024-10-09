@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+
+    <h2>Reservation Form</h2>
+    <form id="reservation-form" novalidate>
+        <!-- Name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <div class="error" id="nameError"></div>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <div class="error" id="emailError"></div>
+
+        <!-- Phone Number -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="^\d{10}$" required>
+        <div class="error" id="phoneError"></div>
+
+        <!-- Date of Reservation -->
+        <label for="date">Reservation Date:</label>
+        <input type="date" id="date" name="date" required>
+        <div class="error" id="dateError"></div>
+
+        <!-- Number of Guests -->
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" name="guests" min="1" required>
+        <div class="error" id="guestsError"></div>
+
+        <!-- Special Requests -->
+        <label for="requests">Special Requests:</label>
+        <textarea id="requests" name="requests"></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+  </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
