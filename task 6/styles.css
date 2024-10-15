@@ -1,0 +1,130 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f5a623, #f76b1c, #f79d00);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Background animation */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Header styling */
+header {
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 3em;
+  color: #fff;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Quote box styling */
+#quote-box {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+#quote-box:hover {
+  transform: scale(1.05);
+}
+
+#quote {
+  font-size: 2em;
+  font-style: italic;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#author {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #eee;
+}
+
+/* Button container for better alignment */
+button-container {
+  display: flex;
+  gap: 20px;
+}
+
+/* Stylish button design */
+button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 15px 35px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: transform 0.3s, background-color 0.3s;
+  margin-top: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background-color: #ff5c4d;
+  transform: translateY(-5px);
+}
+
+button:active {
+  transform: scale(0.95);
+  background-color: #e55342;
+}
+
+/* Reset button style */
+#reset-quote {
+  background-color: #bfbfbf;
+  color: #333;
+}
+
+#reset-quote:hover {
+  background-color: #a6a6a6;
+}
+
+#reset-quote:active {
+  background-color: #8d8d8d;
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 768px) {
+  #quote {
+      font-size: 1.5em;
+  }
+
+  #author {
+      font-size: 1.2em;
+  }
+
+  button {
+      font-size: 1em;
+      padding: 12px 30px;
+  }
+}
